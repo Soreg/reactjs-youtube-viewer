@@ -1,9 +1,23 @@
 import React from 'react';
 
 const VideoDetails = (props) => {
+    const videoID = props.selectedVideo.id.videoId;
+    const videoUrl = `http://www.youtube.com/embed/${videoID}`;
+
+    console.log(props.selectedVideo);
+    
+    
     return(
         <div className="VideoDetails">
-            <h3>Video Details</h3>
+            <div className="video-player">
+                <iframe src={videoUrl}>
+
+                </iframe>
+            </div>
+            <div className="video-details">
+                <h3>{props.selectedVideo.snippet.title}</h3>
+                <p>{props.selectedVideo.snippet.description}</p>
+            </div>
         </div>
     );
 };
