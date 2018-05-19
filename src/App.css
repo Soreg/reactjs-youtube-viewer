@@ -58,10 +58,10 @@ p {
     background: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: .2rem solid white;
     color: white;
-    margin: 10px 0;
-    padding: 2px 0;
+    margin: 1rem 0;
+    padding: .2rem 0;
 }
 
 .LandingPage form input::placeholder {
@@ -71,11 +71,11 @@ p {
 .LandingPage form button {
     background: white;
     border: none;
-    padding: 10px 10px;
+    padding: 1rem;
     width: auto;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: all ease .3s;
 }
 
@@ -83,9 +83,45 @@ p {
     background: rgb(238, 238, 238);
 }
 
-/* */
+/* Page header */
 
+.page-header {
+    display: flex;
+    justify-content: center;
+    background: rgb(117, 0, 0);
+    padding: 2rem;
+}
 
+.page-header form input {
+    margin-right: 3rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: .2rem solid red;
+    outline: none;
+    color: white;
+}
+
+.page-header form input::placeholder {
+    color: white;
+}
+
+.page-header form button {
+    background: rgb(240, 240, 240);
+    border: none;
+    padding: 1rem;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transition: all ease .3s;
+    border-radius: .2rem;
+}
+
+.page-header form button:hover {
+    background: white;
+}
 
 /* */
 
