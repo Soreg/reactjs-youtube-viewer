@@ -1,10 +1,35 @@
 html {
+    font-size: 62.5%;
 }
 
 /* LANDING PAGE INTRO TEXT */
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 .intro-text {
-    margin: 30px auto;
+    margin: 3rem auto;
     color: white;
 }
 
