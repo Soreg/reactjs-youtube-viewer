@@ -83,7 +83,14 @@ p {
     background: rgb(238, 238, 238);
 }
 
-/* Page header */
+/* VIDEO PAGE */
+
+.VideoPage .video-screen {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* PAGE HEADER */
 
 .page-header {
     display: flex;
@@ -123,17 +130,26 @@ p {
     background: white;
 }
 
-/* */
+/* Video Details */
 
+.VideoDetails {
+    flex: 3;
+}
 
+/* Video List */
 
-/* */
+ul.VideoList {
+    flex: 1;
+    list-style-type: none;
+    border: 1px solid rgb(48, 48, 48);
+    padding: 2rem;
+}
 
+/* Video List Item */
 
-
-/* */
-
-
+li.VideoListItem {
+    margin: 2rem 0 2rem 0;
+}
 
 /* */
 
