@@ -4,9 +4,6 @@ const VideoDetails = (props) => {
     const videoID = props.selectedVideo.id.videoId;
     const videoUrl = `http://www.youtube.com/embed/${videoID}`;
 
-    console.log(props.selectedVideo);
-    
-    
     return(
         <div className="VideoDetails">
             <div className="video-player">
