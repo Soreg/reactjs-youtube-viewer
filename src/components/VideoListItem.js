@@ -1,9 +1,10 @@
-import React, { Component} from 'react';
+import React from 'react';
 
 const VideoListItem = (props) => {
     return (
         <li className="VideoListItem">
-            <h3>Video List Item</h3>
+            <h5>{props.video.snippet.title}</h5>
+            <p>{props.video.snippet.description}</p>
         </li>
     );
 };
