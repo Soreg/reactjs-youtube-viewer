@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import SearchFrom from './SearchForm';
 import VideoDetails from './VideoDetails';
@@ -8,9 +8,11 @@ const VideoPage = (props) => {
     return (
         <div className="VideoPage">
             <h1>
-                <SearchFrom />
-                <VideoDetails />
-                <VideoList />
+                <SearchFrom getVideos={props.getVideos}/>
+                <div className="video-screen">
+                    <VideoDetails videoDetails={props.videoDetails}/>
+                    <VideoList videos={props.videos}/>
+                </div>
             </h1>
         </div>
     );
