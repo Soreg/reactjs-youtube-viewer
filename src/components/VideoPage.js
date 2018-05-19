@@ -5,7 +5,6 @@ import VideoDetails from './VideoDetails';
 import VideoList from './VideoList';
 
 const VideoPage = (props) => {
-    
     return (
         <div className="VideoPage">
         <div className="page-header">
@@ -13,7 +12,7 @@ const VideoPage = (props) => {
         </div>
             <div className="video-screen">
                 <VideoDetails selectedVideo={props.selectedVideo}/>
-                <VideoList videos={props.videos}/>
+                <VideoList videos={props.videos} onVideoSelect={props.onVideoSelect}/>
             </div>
         </div>
     );

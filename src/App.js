@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div className="App">
         { !this.state.isSearched && <LandingPage getVideos={this.getVideos}/> }
-        { this.state.isSearched ? <VideoPage getVideos={this.getVideos} selectedVideo={this.state.selectedVideo} videos={this.state.videos}/> : null }
+        { this.state.isSearched ? <VideoPage getVideos={this.getVideos} selectedVideo={this.state.selectedVideo} videos={this.state.videos} onVideoSelect={selectedVideo => this.setState({selectedVideo})}/> : null }
 
       </div>
     );
