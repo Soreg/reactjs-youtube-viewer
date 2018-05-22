@@ -1,10 +1,35 @@
 html {
+    font-size: 62.5%;
 }
 
 /* LANDING PAGE INTRO TEXT */
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 .intro-text {
-    margin: 30px auto;
+    margin: 3rem auto;
     color: white;
 }
 
@@ -33,10 +58,10 @@ html {
     background: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: .2rem solid white;
     color: white;
-    margin: 10px 0;
-    padding: 2px 0;
+    margin: 1rem 0;
+    padding: .2rem 0;
 }
 
 .LandingPage form input::placeholder {
@@ -46,11 +71,11 @@ html {
 .LandingPage form button {
     background: white;
     border: none;
-    padding: 10px 10px;
+    padding: 1rem;
     width: auto;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: all ease .3s;
 }
 
@@ -58,24 +83,149 @@ html {
     background: rgb(238, 238, 238);
 }
 
-/* */
+/* VIDEO PAGE */
 
+.VideoPage .video-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
 
+/* PAGE HEADER */
 
-/* */
+.page-header {
+    display: flex;
+    justify-content: center;
+    background: rgb(117, 0, 0);
+    padding: 2rem;
+}
 
+.page-header form input {
+    margin-right: 3rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: .2rem solid red;
+    outline: none;
+    color: white;
+}
 
+.page-header form input::placeholder {
+    color: white;
+}
 
-/* */
+.page-header form button {
+    background: rgb(240, 240, 240);
+    border: none;
+    padding: 1rem;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transition: all ease .3s;
+    border-radius: .2rem;
+}
 
+.page-header form button:hover {
+    background: white;
+}
 
+/* Video Details */
 
-/* */
+.VideoDetails {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 1rem;
+}
 
+.VideoDetails .video-player {
+    height: 100%;
+    max-height: 60vh;
+}
 
+.VideoDetails .video-player iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(165, 165, 165);
+}
 
-/* */
+.VideoDetails .video-details {
+    border: 1px solid rgb(165, 165, 165);
+    padding: 1rem;
+    margin-top: 2rem;
+}
 
+.VideoDetails .video-details p {
+    margin: .3rem 0;
+}
 
+/* Video List */
 
-/* */
+ul.VideoList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 22%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+/* Video List Item */
+
+li.VideoListItem {
+    cursor: pointer;
+    border: 1px solid rgb(165, 165, 165);
+    border-bottom: none;
+    padding: 2rem 1rem;
+    transition: all ease .2s;
+    overflow: hidden;
+}
+
+li.VideoListItem:last-child {
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+li.VideoListItem:hover {
+    background: rgb(204, 204, 204);
+}
+
+li.VideoListItem p {
+    margin-top: .5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    .VideoDetails {
+        width: 100%;
+    }
+
+    .VideoDetails .video-player {
+        min-height: 500px;
+    }
+
+    ul.VideoList {
+        margin-top: 3rem;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    li.VideoListItem {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+        border: 1px solid rgb(165, 165, 165);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    li.VideoListItem {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 550px) { 
+    li.VideoListItem {
+        width: 100%;
+    }
+}
