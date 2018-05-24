@@ -30,9 +30,6 @@ class App extends Component {
           isSearched: true
         })
       }
-
-      
-
     });
 
   };
